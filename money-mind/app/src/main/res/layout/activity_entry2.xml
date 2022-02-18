@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ExpenseFragment">
+
+
+    <TableLayout
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/AddEntryViewText"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#C3C3C3"
+                android:gravity="center"
+                android:text="Adding a new Entry"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TransactionViewText"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="Transaction"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/TypeSpinner2"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="2"
+                android:textStyle="italic" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/DateViewText"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="Date"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/DateEditText2"
+                android:layout_width="134dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:focusableInTouchMode="false"
+                android:hint="Add Date" />
+
+            <EditText
+                android:id="@+id/TimeEditText2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:focusableInTouchMode="false"
+                android:hint="Add Time" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/PaymentViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="Payment"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/PaymentSpinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:lines="2"
+                android:textStyle="italic" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/CategoryViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="Category"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/CategorySpinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="2"
+                android:textStyle="italic" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/AmountViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="Amount"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/AmountEditText2"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:lines="2"
+                android:textStyle="italic"
+                android:text="0.00"/>
+
+            <Spinner
+                android:id="@+id/CurrencySpinner2"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="2"
+                android:textStyle="italic" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/NoteViewText"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Note"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <EditText
+            android:id="@+id/NoteEditText2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLength="18"
+            android:lines="2"
+            android:textColor="@android:color/black"
+            android:hint="Enter your Note here"/>
+
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSaveEntryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_check_box_white"
+            app:backgroundTint="#8F8F8F"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.84"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.23000002"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <CheckBox
+            android:id="@+id/boldCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bold"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/italicCheckBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/italicCheckBox" />
+
+        <CheckBox
+            android:id="@+id/italicCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Italic"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01999998" />
+
+        <CheckBox
+            android:id="@+id/underlineCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Underline"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/italicCheckBox"
+            app:layout_constraintTop_toTopOf="@+id/italicCheckBox" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

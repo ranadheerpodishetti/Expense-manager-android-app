@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "266121447505",
+    "firebase_url": "https://moneymind-77a23.firebaseio.com",
+    "project_id": "moneymind-77a23",
+    "storage_bucket": "moneymind-77a23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266121447505:android:11de6ff06d4a85db2e1070",
+        "android_client_info": {
+          "package_name": "com.example.moneymind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266121447505-7gfbqip6u1lhb9094vrirvcbkr06e8ls.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moneymind",
+            "certificate_hash": "37fb222d3357a6715a32d58e71ee6e2e2106215f"
+          }
+        },
+        {
+          "client_id": "266121447505-16tkko8uiavgtvmvjs4r6t278ireiap2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1BAXqlBJUWTznbMlHwXLFUfx_yO8XqHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266121447505-16tkko8uiavgtvmvjs4r6t278ireiap2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
